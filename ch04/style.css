@@ -1,0 +1,26 @@
+
+body{
+    margin: 0px;
+}
+ul{list-style: none; 
+    /* ul 태그의 마진을 0px로 초기화 */
+    margin: 0px;
+}
+ul li{
+    /* inline은 적용안됨 , margin속성이 있어서 */
+    display:inline-block;
+    margin: 16px;
+    border-top: 3px solid hsl(0, 0%, 13%);
+    padding: 10px;
+}
+ul li a{
+    text-decoration: none;
+    color: red;
+    padding: 10px;
+}
+ul li a:hover{
+    background-color: #eee;
+}
+section{
+    margin-left: 16px;
+}
