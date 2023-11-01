@@ -10,6 +10,40 @@
     <div id = "container">
         <h2>레드향 주문</h2>
         <form action="shipping.jsp" method = "post">
+            <fieldset>
+                <!-- typenumber : 숫자 표시 -->
+                <legend>상품 선택</legend>
+                <p>주문할 상품을 선택해 주세요.</p>
+                <ul>
+                    <li>
+                        <label><input type="checkbox" name="ck_gift3" value="g_3">선물용 3kg</label>
+                        <input type="number" name="num_gift3" min="0" max="5">개(최대5개)
+                    </li>
+                    <li>
+                        <label><input type="checkbox" name="ck_gift5" value="g_3">선물용 5kg</label>
+                        <input type="number" name="num_gift5" min="0" max="3">개(최대3개)
+                    </li>
+                </ul>
+                <!-- type range (슬라이드)범위 표시 -->
+                <ul>
+                    <li>
+                        <label><input type="checkbox" name="ck_fa3"  value="g_3">가정용 3kg</label>
+                        <input type="range" min="0" max="5" name="ck_fa3">개(최대5개)
+                    </li>
+                    <li>
+                        <label><input type="checkbox" name="ck_fa5" value="g_3">가정용 5kg</label>
+                        <input type="range" min="0" max="3" name="ck_fa5">개(최대3개)
+                    </li>
+                </ul>
+                <p>포장 선택</p>
+                <ul>
+                    <li>
+                        <label><input type ="radio" name="gift" value="yes">선물 포장</label>
+                        <label class="size"><input type ="radio" name="gift" value="no">
+                                기본포장 </label>
+                    </li>
+                </ul>
+            </fieldset>
         <fieldset>
             <legend>배송 정보</legend>
             <ul>
@@ -55,6 +89,7 @@
         </fieldset>
         <div>
             <input type="submit" value="주문하기">
+            <input type="reset" value="취소하기">
         </div>
         </form>
     </div>

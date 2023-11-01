@@ -11,4 +11,16 @@ form{
 }
 ul li{
     list-style: none;
+    margin: 16px;
+}
+ul li label{
+    width: 120px;
+    float: left;
+}
+
+textarea{resize: none;}
+
+input[type='submit'],input[type='reset']{
+    cursor:pointer ;
+    padding: 5px 10px;
 }
