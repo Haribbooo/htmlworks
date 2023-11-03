@@ -1,0 +1,33 @@
+
+#container{
+   width: 960px;
+   margin: 0 auto;
+}
+.content{
+   width: 400px;
+   margin: 0 auto;
+   border: 1px solid #ccc;
+   padding: 20px;
+}
+/* 모든 지식요소중 첫번재 자식 요소  */
+.content :first-child{ /*nth-child(1) */
+   color : blue;
+}
+.content :nth-child(2n+1){
+   background-color: rgb(255, 234, 113);
+}
+/* .content :last-child{
+   background-color: greenyellow;
+} */
+
+/* p:nth-of-type() */
+
+/* p:nth-last-of-type() p태그 중에서 2번째 선택*/
+.content p:nth-last-of-type(2){
+   color: red;
+}
+
+/* 본 내용 2를 녹색으로 스타일하기 */
+.content h2 :nth-of-type(2){
+   color:green;
+}
