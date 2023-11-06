@@ -1,0 +1,29 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+#content{
+   width:1000px;
+   margin:30px auto;
+}
+#content h1{text-align: center;}
+
+.prod-list{margin-top: 30px;} /*ul 임*/
+.prod-list li{
+   float: left; 
+   margin: 5px 10px;
+   position: relative;
+   overflow: hidden;}
+.prod-list img{float: left;}
+.prod-list .caption{
+   position: absolute;
+   color: white;
+   width: 300px; height: 200px;
+   background:rgba(0,0,0,0.6);
+   top: 200px;
+   transition: all 0.6s;
+}
+.prod-list li:hover .caption{transform: translateY(-200px);}
+.prod-list .caption h2,p{
+   text-align: center;
+   line-height: 2;
+   padding: 10px;
+}
